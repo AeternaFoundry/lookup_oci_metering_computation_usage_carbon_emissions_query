@@ -1,0 +1,6 @@
+data "oci_metering_computation_usage_carbon_emissions_query" "metering_computation_usage_carbon_emissions_query_lookup" {
+  for_each = var.metering_computation_usage_carbon_emissions_query_lookup
+
+  usage_carbon_emissions_query_id = each.value.usage_carbon_emissions_query_id
+}
+
